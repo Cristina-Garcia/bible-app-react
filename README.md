@@ -1,6 +1,6 @@
 # React + Vite
 
-Hola. Quise crear mi pequeña y sencilla aplicación de la biblia. 😁😊😸
+Hola. Quise crear mi pequeña y sencilla aplicación de la biblia y aquí está el resultado. 😁😊😸
 
 
 **-->HOME<--**
