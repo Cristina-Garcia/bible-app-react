@@ -1,6 +1,6 @@
 # React + Vite
 
-[https://raw.githubusercontent.com/Cristina-Garcia/bible-app-react.git/main/public/home-bible-app.png](
+!https://raw.githubusercontent.com/Cristina-Garcia/bible-app-react.git/main/public/home-bible-app.png
 
 !Home
 
