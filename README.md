@@ -1,6 +1,8 @@
 # React + Vite
 
-Hola. Quise crear mi pequeña y sencilla aplicación de la biblia. :EMOJICODE😁 
+Hola. Quise crear mi pequeña y sencilla aplicación de la biblia. 😁😊😸
+
+
 **-->HOME<--**
 
 
