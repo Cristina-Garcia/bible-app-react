@@ -1,0 +1,84 @@
+.config-user {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid;
+  position: absolute;
+  top: 40px;
+  right: -10px;
+  z-index: 10;
+}
+.config-user__header {
+  margin: 0;
+  background-color: #edefef;
+  border-bottom: 1px solid #d0d2d2;
+  & h5 {
+    margin: 0;
+  }
+}
+.font-size {
+  display: flex;
+  justify-content: center;
+  padding-inline: 1rem;
+  margin-block: 1rem;
+
+  & .option {
+    border: 1px solid;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #2274a5;
+    }
+  }
+}
+
+.option-small svg {
+  width: 16px;
+  height: 16px;
+}
+.option-normal svg {
+  width: 24px;
+  height: 24px;
+}
+.option-large svg {
+  width: 32px;
+  height: 32px;
+}
+
+.font-size .selected {
+  background-color: #2274a5;
+}
+
+.font-family {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  & h6 {
+    margin: 0;
+  }
+}
+.fonts-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  & button {
+    width: 100%;
+  }
+  & button:nth-child(1) {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    margin-top: 8px;
+  }
+  & button:nth-child(2) {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+  }
+  & button:nth-child(2) {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+}
