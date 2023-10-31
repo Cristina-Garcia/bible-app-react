@@ -8,9 +8,9 @@ const routes = [
   {
     path: '/',
     element: <Home />,
+    errorElement: <ErrorPage />,
     exact: true,
     label: 'Home',
-    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -21,6 +21,7 @@ const routes = [
       {
         path: 'passages/:passagesId',
         element: <Passages />,
+        errorElement: <ErrorPage />,
         exact: true,
         label: 'Passages',
       },
@@ -28,6 +29,7 @@ const routes = [
         path: 'search',
         element: <ResultSearch />,
         exact: true,
+        errorElement: <ErrorPage />,
         label: 'Result of Search',
       },
     ],

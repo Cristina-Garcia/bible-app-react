@@ -51,7 +51,7 @@ const getVerses = async (chapterId) => {
       `${URL}/chapters/${chapterId}/verses`,
       options
     )
-    console.log(response.data)
+    return response.data
   } catch (error) {
     console.error(error)
   }

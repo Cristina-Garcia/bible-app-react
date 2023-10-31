@@ -39,13 +39,10 @@ export const DataProvider = ({ children }) => {
     const passageId = id
     if (passageId) {
       try {
-        const passagesList = await getsRequests.getPassages(id)
-        if (passagesList) {
-          console.log(passagesList)
-          setPassages(passagesList)
-          navigateTo(`passages/${passageId}`)
-          setOpenChapters(false)
-        }
+        const passagesList = await getsRequests.getPassages(passageId)
+        setPassages(passagesList)
+        navigateTo(`passages/${passageId}`)
+        setOpenChapters(false)
       } catch (error) {
         console.log('Error', error)
       }
@@ -65,15 +62,14 @@ export const DataProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    try {
-      if (bibleBookId) {
+    if (bibleBookId) {
+      try {
         getsRequests.getChapters(bibleBookId).then((chaptersList) => {
-          // console.log(chaptersList)
           setChapters(chaptersList)
         })
+      } catch (error) {
+        console.log('Error', error)
       }
-    } catch (error) {
-      console.log('Error', error)
     }
   }, [bibleBookId])
 

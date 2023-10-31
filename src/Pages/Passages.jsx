@@ -13,7 +13,6 @@ function Passages() {
   const [chapter, setChapter] = useState('')
   const content = passages.content
   const { passagesId } = useParams()
-
   const nextChapter = (chapterId) => {
     const book = chapterId.slice(0, 4)
     const chap = chapterId.substring(4)
@@ -40,6 +39,7 @@ function Passages() {
       setChapter('')
     }
   }
+
   return (
     <div className="passage">
       <div className="controllers">
@@ -61,6 +61,9 @@ function Passages() {
               d="M15.75 19.5L8.25 12l7.5-7.5"
             />
           </svg>
+        </div>
+        <div>
+          <h5>{passages.reference}</h5>
         </div>
         <div
           className=" control chevron-right"
