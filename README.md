@@ -1,9 +1,15 @@
 # React + Vite
 
-https://raw.githubusercontent.com/Cristina-Garcia/bible-app-react.git/home-bible-app.png
+Hola. Quise crear mi pequeña y sencilla aplicación de la biblia y aquí está el resultado. 😁😊😸
 
-!Home
 
-https://raw.githubusercontent.com/Cristina-Garcia/bible-app-react.git/capitulos-bible-app.png
+**-->HOME<--**
 
-!Capitulos de la biblia
+
+![vista del home de mi aplicacion de la biblia](https://raw.githubusercontent.com/Cristina-Garcia/bible-app-react/main/public/home-bible-app.png)
+
+**-->Capítulos de la biblia<--**
+
+![vista de un capitulo elegido desglosado](https://raw.githubusercontent.com/Cristina-Garcia/bible-app-react/main/public/capitulos-bible-app.png)
+
+
