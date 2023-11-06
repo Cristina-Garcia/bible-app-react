@@ -15,60 +15,40 @@ const options = {
 //get books
 
 async function getBooks() {
-  try {
-    const response = await axios.get(`${URL}/books`, options)
-    const data = response.data.data
-    return data
-  } catch (error) {
-    console.error(error)
-  }
+  const response = await axios.get(`${URL}/books`, options)
+  const data = response.data.data
+  return data
 }
 // get Chapters
 const getChapters = async (bibleBookID) => {
-  try {
-    const response = await axios.get(
-      `${URL}/books/${bibleBookID}/chapters`,
-      options
-    )
-    return response.data.data
-  } catch (error) {
-    console.error(error)
-  }
+  const response = await axios.get(
+    `${URL}/books/${bibleBookID}/chapters`,
+    options
+  )
+  return response.data.data
 }
 //getPassages
 const getPassages = async (passageId) => {
-  try {
-    const response = await axios.get(`${URL}/passages/${passageId}`, options)
-    return response.data.data
-  } catch (error) {
-    console.error(error)
-  }
+  const response = await axios.get(`${URL}/passages/${passageId}`, options)
+  return response.data.data
 }
 // get verses
 const getVerses = async (chapterId) => {
-  try {
-    const response = await axios.get(
-      `${URL}/chapters/${chapterId}/verses`,
-      options
-    )
-    return response.data
-  } catch (error) {
-    console.error(error)
-  }
+  const response = await axios.get(
+    `${URL}/chapters/${chapterId}/verses`,
+    options
+  )
+  return response.data
 }
 
 // get a search
 const searching = async (query) => {
-  try {
-    const response = await axios.get(
-      `${URL}/search?query=${query}&offset=1&sort=relevance`,
-      options
-    )
-    const result = response.data.data.verses
-    return result
-  } catch (error) {
-    console.error(error)
-  }
+  const response = await axios.get(
+    `${URL}/search?query=${query}&offset=1&sort=relevance`,
+    options
+  )
+  const result = response.data.data.verses
+  return result
 }
 
 const query = 'amor'
