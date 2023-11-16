@@ -4,6 +4,7 @@ import ConfigUser from './ConfigUser'
 import ListBooks from './ListBooks'
 import { DataContext } from '../context'
 import ListChapters from './ListChapters'
+import logo from '../img/jesus-by-freepik.png'
 import '../styles/header.css'
 
 function Header() {
@@ -60,10 +61,7 @@ function Header() {
           <div className="logo-navbar">
             <div>
               <Link to="/">
-                <img
-                  src="../public/jesus-by-freepik.png"
-                  alt="logo imagen de jesus by freepik"
-                />
+                <img src={logo} alt="logo imagen de jesus by freepik" />
               </Link>
             </div>
           </div>

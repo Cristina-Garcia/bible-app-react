@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { versiculos } from '../service/versiculos'
+import logo from '../img/jesus-by-freepik.png'
 import '../styles/verse.css'
 function Welcome() {
   const [verseOfTheDay, setVerseOfTheDay] = useState()
@@ -10,10 +11,7 @@ function Welcome() {
     <div className="verse-contanier">
       <div className="verse-header">
         <figure>
-          <img
-            src="../public/jesus-by-freepik.png"
-            alt="icono iamgen de jesus animada by freepik"
-          />
+          <img src={logo} alt="icono iamgen de jesus animada by freepik" />
         </figure>
         <h3>Tengo un mensaje para ti: </h3>
       </div>
