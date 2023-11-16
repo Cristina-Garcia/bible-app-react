@@ -1,4 +1,4 @@
-import '../styles/ListChapters.css'
+import '../styles/listChapters.css'
 function ListChapters({
   chapters,
   backToBooksList,
